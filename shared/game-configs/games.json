@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "provisional",
+  "notes": [
+    "These grid layouts reflect the requested Slotterhouse design and are not a substitute for verifying current official game rules.",
+    "Confirm number ranges, draw counts, bonus-ball rules, historical rule eras, and source CSV schemas before enabling ingestion or candidate generation.",
+    "Powerball grid slot 0 is a placeholder only; it is not a valid white-ball result."
+  ],
+  "games": [
+    {
+      "id": "all_or_nothing",
+      "display_name": "All or Nothing",
+      "grid": { "rows": 6, "columns": 4, "numbering": "sequential_row_major", "range": [1, 24] },
+      "main_numbers_per_draw": 12,
+      "bonus_numbers": [],
+      "sessions": ["morning", "day", "evening", "night"],
+      "session_schedule": "monday_saturday",
+      "verification_required": true
+    },
+    {
+      "id": "pick3",
+      "display_name": "Pick 3",
+      "grid": { "rows": 10, "columns": 3, "row_labels": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], "columns_are_ordered_digit_positions": true },
+      "main_numbers_per_draw": 3,
+      "preserve_leading_zeroes": true,
+      "sessions": ["morning", "day", "evening", "night"],
+      "session_schedule": "monday_saturday",
+      "verification_required": true
+    },
+    {
+      "id": "daily4",
+      "display_name": "Daily 4",
+      "grid": { "rows": 10, "columns": 4, "row_labels": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], "columns_are_ordered_digit_positions": true },
+      "main_numbers_per_draw": 4,
+      "preserve_leading_zeroes": true,
+      "sessions": ["morning", "day", "evening", "night"],
+      "session_schedule": "monday_saturday",
+      "verification_required": true
+    },
+    {
+      "id": "cash_five",
+      "display_name": "Cash Five",
+      "grid": { "rows": 7, "columns": 5, "numbering": "sequential_row_major", "requested_range": [1, 35] },
+      "main_numbers_per_draw": 5,
+      "bonus_numbers": [],
+      "verification_required": true,
+      "range_status": "unverified"
+    },
+    {
+      "id": "texas_two_step",
+      "display_name": "Texas Two Step",
+      "grid": { "rows": 7, "columns": 5, "numbering": "sequential_row_major", "requested_range": [1, 35] },
+      "main_numbers_per_draw": 4,
+      "bonus_numbers": ["bonus_ball"],
+      "bonus_ball_excluded_from_grid": true,
+      "verification_required": true,
+      "range_status": "unverified"
+    },
+    {
+      "id": "powerball",
+      "display_name": "Powerball",
+      "grid": { "rows": 7, "columns": 10, "numbering": "requested_slot_layout", "placeholder_slots": [0], "valid_white_ball_range": [1, 69] },
+      "main_numbers_per_draw": 5,
+      "bonus_numbers": ["powerball"],
+      "bonus_ball_excluded_from_grid": true,
+      "verification_required": true
+    },
+    {
+      "id": "mega_millions",
+      "display_name": "Mega Millions",
+      "grid": { "rows": 7, "columns": 10, "numbering": "requested_layout", "requested_main_range": [1, 70] },
+      "main_numbers_per_draw": 5,
+      "bonus_numbers": ["mega_ball"],
+      "bonus_ball_excluded_from_grid": true,
+      "verification_required": true,
+      "range_status": "unverified"
+    }
+  ]
+}
