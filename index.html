@@ -6,12 +6,12 @@
 <meta name="theme-color" content="#101522">
 <meta name="google-adsense-account" content="ca-pub-7028777519947527">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7028777519947527" crossorigin="anonymous"></script>
-<title>Slotterhouse — Batchmate companion</title>
+<title>NumberLab — Batchmate companion</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1420;--panel:#171f2e;--panel2:#1d293b;--line:#2b3850;--text:#e8edf6;--muted:#91a0b8;--gold:#ffbf4a;--blue:#62a9ff;--green:#57d6a5}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
 header{padding:22px clamp(18px,4vw,48px);border-bottom:1px solid var(--line);background:#111927}
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:25px;font-weight:800;letter-spacing:-.5px}.brand span{color:var(--blue)}.tag{border:1px solid #72511c;color:#ffd88d;background:#3b2b16;padding:5px 11px;border-radius:99px;font-size:12px;font-weight:700}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:clamp(34px,4.5vw,44px);font-weight:850;letter-spacing:-1.1px;line-height:1.08}.brand span{color:var(--blue)}.tag{border:1px solid #72511c;color:#ffd88d;background:#3b2b16;padding:5px 11px;border-radius:99px;font-size:12px;font-weight:700}
 nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}nav button{border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:9px 13px;border-radius:9px;font:inherit;cursor:pointer}nav button.active{background:#203653;border-color:#37669b;color:#fff}
 main{max-width:1180px;margin:auto;padding:26px clamp(16px,4vw,42px) 60px}.intro{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:22px}.intro h1{font-size:clamp(25px,4vw,36px);margin:0 0 5px}.muted{color:var(--muted)}.pill{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:5px 10px;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}.card h2,.card h3{margin:0 0 9px}.card h2{font-size:18px}.card h3{font-size:15px}.metric{font-size:26px;font-weight:750;color:var(--gold)}.section{margin-top:22px}.section>h2{font-size:19px;margin:0 0 12px}.action{display:inline-block;background:#21466e;border:1px solid #37699c;color:white;border-radius:9px;padding:10px 14px;text-decoration:none;cursor:pointer;font:inherit}.subtle{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:9px;padding:10px 13px;font:inherit;cursor:pointer}
@@ -24,13 +24,13 @@ footer{border-top:1px solid var(--line);padding:20px clamp(18px,4vw,48px);color:
 </head>
 <body>
 <header>
- <div class="top"><div class="brand">Slotter<span>house</span></div><span class="tag">BATCHMATE COMPANION</span></div>
- <nav aria-label="Slotterhouse sections">
+ <div class="top"><div class="brand" role="heading" aria-level="1">Number<span>Lab</span></div><span class="tag">BATCHMATE COMPANION</span></div>
+ <nav aria-label="NumberLab sections">
   <button class="active" data-view="overview">Overview</button><button data-view="journal">Piece Journal</button><button data-view="shapes">Shape Tracking</button><button data-view="transitions">Transitions</button><button data-view="assumptions">Assumptions</button><button data-view="imports">Data Imports</button>
  </nav>
 </header>
 <main>
-<section class="intro"><div><h1 id="pageTitle">Slotterhouse overview</h1><div class="muted">Chronological drawing analysis, exact-position shapes, and evidence-based assumptions.</div></div><span class="pill">Independent companion app</span></section>
+<section class="intro"><div><h1 id="pageTitle">NumberLab overview</h1><div class="muted">Chronological drawing analysis, exact-position shapes, and evidence-based assumptions.</div></div><span class="pill">Independent companion app</span></section>
 <div class="adslot" id="ad-top"><ins class="adsbygoogle"
      style="display:block"
      data-ad-format="autorelaxed"
@@ -88,7 +88,7 @@ footer{border-top:1px solid var(--line);padding:20px clamp(18px,4vw,48px);color:
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></div>
 </main>
-<footer>Slotterhouse is an analytical companion to Batchmate. Past drawings do not alter the odds of future random drawings.</footer>
+<footer>NumberLab is an analytical companion to Batchmate. Past drawings do not alter the odds of future random drawings.</footer>
 <script>
 const labels={overview:'Slotterhouse overview',journal:'Piece Journal',shapes:'Shape Tracking',transitions:'Transition analysis',assumptions:'Constrained assumptions',imports:'Data Imports'};
 function show(view){document.querySelectorAll('.panelview').forEach(x=>x.classList.toggle('active',x.id===view));document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===view));document.getElementById('pageTitle').textContent=labels[view]||labels.overview;location.hash=view;}
